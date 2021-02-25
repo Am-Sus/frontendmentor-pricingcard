@@ -132,7 +132,7 @@ body {
 }
 
 
-@media screen   and (max-width: 1440px)  {
+@media screen   and (max-width: 375px)  {
 
     body {
         margin: 0;
