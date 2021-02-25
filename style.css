@@ -1,0 +1,158 @@
+:root {
+    /* primary */
+    --mobile_size: 375px;
+    --desktop_size: 1440px;
+
+/* ## Colors
+
+### Primary */
+
+    --cyan: hsl(179, 62%, 43%);
+    --yellow: hsl(71, 73%, 54%);
+
+/* ### Neutral */
+
+    --light_gray: hsl(204, 43%, 93%);
+    --grayish_blue: hsl(218, 22%, 67%);
+
+/* ## Typography */
+
+/* ### Body Copy */
+
+    font_size: 16px;
+
+/* ### Font
+
+- Family: [Karla](https://fonts.google.com/specimen/Karla)
+- Weights: 400, 700 */
+}
+
+
+body {
+    padding: 0;
+}
+
+
+.container {
+    background-color: rgb(229, 222, 235);
+    width: 100vw;
+    height: 100vh;
+    /* padding: 10em; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pricing-card {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    width: 70%;
+    height: 70%;
+    box-shadow: 3px 6px 20px 1px #585353;
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+.pricing-banner {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    /* spans 2 columns */
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: var(--light_gray);
+    padding: 3em;
+    /* border-radius: 1em 1em 0 0; */
+}
+
+.pricing-callaction {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding: 3em;
+    background-color: var(--grayish_blue);
+    /* border-radius:  0 0 0 1em; */
+    
+}
+
+
+.pricing-why {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: ;
+    background-color: var(--cyan);
+    padding: 3em;
+    /* border-radius: 0 0 1em 0; */
+}
+
+.banner-subhead {
+    font-weight: 400px;
+    
+}
+
+.text-small {
+    font-weight: normal;
+}
+
+.text-gray {
+    color: var(--light_gray);
+}
+
+.text-yellow {
+    color: var(--yellow);
+}
+
+.text-cyan {
+    color: var(--cyan);
+}
+
+.bg-yellow {
+    background-color: var(--yellow);
+}
+
+
+
+.cell {
+    /* border: 1px solid; */
+}
+
+.text-grayish-blue {
+    color: var(--grayish_blue);
+}
+
+.callaction-btn {
+    height: 4em;
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 2px 2px 4px 2px gray;
+}
+
+
+@media screen   and (max-width: 1440px)  {
+
+    body {
+        margin: 0;
+    }
+    .container {
+        /* background-color: black; */
+        padding: 0;
+        height: 100%;
+    }
+
+    .pricing-card {
+        margin: 0;
+        display: flex;
+        border-radius: 0px;
+        width: 100%;
+        flex-direction: column;
+    
+    }
+
+    .cell {
+        height: 33%;
+    }
+}
